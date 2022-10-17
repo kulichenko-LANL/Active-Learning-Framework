@@ -179,7 +179,7 @@ The cycle repeats untill time limit reached or manually stopped.
    - Ntrain, Nvalid, Ntest - training:validation:test split such that (Ntrain-Nvalid-Ntest):Nvalid:Ntest
    - hold_out - percentage of hold out set (e.g., 0.1 - 10%)
 
-	#aev_params
+##### aev_params
    - elements - all element types (e.g., ["H","C","N","O"])
    - NRrad - number of radial functions in radial descriptor
    - Rradcut - cutoff radius for radial part
