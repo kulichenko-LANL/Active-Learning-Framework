@@ -44,7 +44,6 @@ The cycle repeats untill time limit reached or manually stopped.
 	_neurochem-build_ - NeuroChem compiled binaries
 
 _examples_ contains 5 folders:
-
 	_350K_udd-al_, _350K_md-al_, _600K_md-al_, and _1000K_md-al_ jobs. In each of them:
 		xyz folder contains a set of starting geometries for MD simulations
 		data_path contains 3 folders:
