@@ -61,7 +61,7 @@ The cycle repeats untill time limit reached or manually stopped.
 
 ## Build environment
 - Allocate node, e.g.  
-        salloc -p atdm-ml
+	salloc -p atdm-ml
 
 	# create and activate new env
 	conda create --name udd-al
