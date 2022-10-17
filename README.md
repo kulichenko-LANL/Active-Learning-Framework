@@ -39,12 +39,13 @@ The cycle repeats untill time limit reached or manually stopped.
 *exports* contains 4 folders:
 
 	_activepotential_ - general AL framework
-	ANI-Tools - scripts for training and data processing
-	boost_1_63_0 - 
-	neurochem-build - NeuroChem compiled binaries
+	_ANI-Tools_ - scripts for training and data processing
+	_boost_1_63_0_ - 
+	_neurochem-build_ - NeuroChem compiled binaries
 
-examples contains 5 folders:
-	350K_UD-AL, 350K_MD-AL, 600K_MD-AL, and 1000K_MD-AL jobs. In each of them:
+_examples_ contains 5 folders:
+
+	_350K_udd-al_, _350K_md-al_, _600K_md-al_, and _1000K_md-al_ jobs. In each of them:
 		xyz folder contains a set of starting geometries for MD simulations
 		data_path contains 3 folders:
 			h5store contains initial training set and sampled data.
