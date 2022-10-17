@@ -36,7 +36,8 @@ The cycle repeats untill time limit reached or manually stopped.
 
 ## Repository sctructure	
 
-*exports* contains 4 folders
+*exports* contains 4 folders:
+
 	_activepotential_ - general AL framework
 	ANI-Tools - scripts for training and data processing
 	boost_1_63_0 - 
