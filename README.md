@@ -43,7 +43,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 - *neurochem-build* - NeuroChem compiled binaries  
 
 *example* contains 5 folders:  
-- *350K_udd-al*, *350K_md-al*, *600K_md-al*, and *1000K_md-al* jobs. In each of them:  
+- *350K_udd-al*, *350K_md-al*, *600K_md-al*, and *1000K_md-al* jobs with settings used for the generation of data discussed in the paper.  In each of them:  
   - *xyz* folder contains a set of starting geometries for MD simulations
   - *data_path* contains 3 folders:  
     - *h5store* contains initial training set and sampled data.
