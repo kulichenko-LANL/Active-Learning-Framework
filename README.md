@@ -37,10 +37,10 @@ The cycle repeats untill time limit reached or manually stopped.
 ## Repository sctructure	
 
 *exports* contains 4 folders:  
-	activepotential_ - general AL framework  
-	_ANI-Tools_ - scripts for training and data processing  
-	_boost_1_63_0_ -   
-	_neurochem-build_ - NeuroChem compiled binaries  
+  _activepotential_ - general AL framework  
+  _ANI-Tools_ - scripts for training and data processing  
+  _boost_1_63_0_ -   
+  _neurochem-build_ - NeuroChem compiled binaries  
 
 _examples_ contains 5 folders:
 	_350K_udd-al_, _350K_md-al_, _600K_md-al_, and _1000K_md-al_ jobs. In each of them:
