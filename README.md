@@ -26,45 +26,42 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 ## Workflow in brief
-The code trains an ensemble of NN interatomic potentials (data_path/models/) using initial training set (data_path/h5store/initial_training_set_125.h5).  
+The code trains an ensemble of NN interatomic potentials *data_path/models/* using initial training set *data_path/h5store/initial_training_set_125.h5*.  
 Then MD sampling is performed using NN ensemble interfaced with ASE.  
-Bias potential code: exports/neurochem-build/lib/ase_interface.py  
-Bias potential interfaced with ASE-based MD sampler: exports/activepotential/alframework/samplers/normal_md_sampling.py  
-New data is stored in (data_path/h5store).  
+Bias potential code: *exports/neurochem-build/lib/ase_interface.py*  
+Bias potential interfaced with ASE-based MD sampler: *exports/activepotential/alframework/samplers/normal_md_sampling.py*  
+New data is stored in *data_path/h5store*.  
 The cycle repeats untill time limit reached or manually stopped.  
 
 
 ## Repository sctructure	
 
 *exports* contains 4 folders:  
--_activepotential_ - general AL framework  
--_ANI-Tools_ - scripts for training and data processing  
--_boost_1_63_0_ -   
--_neurochem-build_ - NeuroChem compiled binaries  
+- *activepotential* - general AL framework  
+- *ANI-Tools* - scripts for training and data processing  
+- *boost_1_63_0* -   
+- *neurochem-build* - NeuroChem compiled binaries  
 
-_examples_ contains 5 folders:
-	_350K_udd-al_, _350K_md-al_, _600K_md-al_, and _1000K_md-al_ jobs. In each of them:
-		xyz folder contains a set of starting geometries for MD simulations
-		data_path contains 3 folders:
-			h5store contains initial training set and sampled data.
-			models (created after the job submission) contains ensembles of models from each AL iteration.
-			ckstore (created after the job submission) contains QC (psi4) out files.
-		dymanics (created after the job submission) contains log files with some information from each MD simulation.
-		al_ani_md.py - main AL script
-		ani_training.json - NN and training parameters
-		mlmdsampler.json - AL and MD parameters
-		sbatch_1node.sh - slurm submission file for a single node (requires configuration)
-		sbatch_2nodes.sh - slurm submission file for multiple nodes (requires configuration)
-
-	example_ase_ani - python script with ANI interfaced with ase
+*example* contains 5 folders:  
+- *350K_udd-al*, *350K_md-al*, *600K_md-al*, and *1000K_md-al* jobs. In each of them:  
+  - *xyz* folder contains a set of starting geometries for MD simulations
+  - *data_path* contains 3 folders:  
+    - *h5store* contains initial training set and sampled data.
+    - *models* (created after the job submission) contains ensembles of models from each AL iteration.
+    - *ckstore* (created after the job submission) contains QC (psi4) out files.
+  - *dymanics* (created after the job submission) contains log files with some information from each MD simulation.  
+  - *al_ani_md.py* - main AL script  
+  - *ani_training.json* - NN and training parameters  
+  - *mlmdsampler.json* - AL and MD parameters  
+  - *sbatch_1node.sh* - slurm submission file for a single node (requires configuration)  
+  - *sbatch_2nodes.sh* - slurm submission file for multiple nodes (requires configuration)  
+- *example_ase_ani* - python script with ANI interfaced with ase
 	
 
-##############################
-##### Build environment #####
-##############################
 
-	# Allocate node, e.g.
-	salloc -p atdm-ml
+## Build environment
+- Allocate node, e.g.  
+        salloc -p atdm-ml
 
 	# create and activate new env
 	conda create --name udd-al
