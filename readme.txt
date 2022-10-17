@@ -4,12 +4,13 @@ provided that the following conditions are met:
 1. Redistributions of source code must retain the above copyright notice, this list of conditions and
 the following disclaimer.
 
-2.Redistributions in binary form must reproduce the above copyright notice, this list of conditions
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions
 and the following disclaimer in the documentation and/or other materials provided with the
 distribution.
 
-3.Neither the name of the copyright holder nor the names of its contributors may be used to endorse
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse
 or promote products derived from this software without specific prior written permission.
+
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
 IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
@@ -23,13 +24,13 @@ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-
-# The code trains an ensemble of NN interatomic potentials (data_path/models/) using initial training set (data_path/h5store/initial_training_set_125.h5).
-# Then MD sampling is performed using NN ensemble interfaced with ASE.
-# Bias potential code: exports/neurochem-build/lib/ase_interface.py
-# Bias potential interfaced with ASE-based MD sampler: exports/activepotential/alframework/samplers/normal_md_sampling.py
-# New data is stored in (data_path/h5store).
-# The cycle repeats untill time limit reached or manually stopped.
+## Workflow in brief
+The code trains an ensemble of NN interatomic potentials (data_path/models/) using initial training set (data_path/h5store/initial_training_set_125.h5).
+Then MD sampling is performed using NN ensemble interfaced with ASE.
+Bias potential code: exports/neurochem-build/lib/ase_interface.py
+Bias potential interfaced with ASE-based MD sampler: exports/activepotential/alframework/samplers/normal_md_sampling.py
+New data is stored in (data_path/h5store).
+The cycle repeats untill time limit reached or manually stopped.
 
 
 #############################
