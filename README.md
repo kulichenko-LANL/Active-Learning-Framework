@@ -26,7 +26,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 ## Workflow in brief
-The code trains an ensemble of NN interatomic potentials (data_path/models/) using initial training set (data_path/h5store/initial_training_set_125.h5).
+The code trains an ensemble of NN interatomic potentials (data_path/models/) using initial training set (data_path/h5store/initial_training_set_125.h5).  
 Then MD sampling is performed using NN ensemble interfaced with ASE.
 Bias potential code: exports/neurochem-build/lib/ase_interface.py
 Bias potential interfaced with ASE-based MD sampler: exports/activepotential/alframework/samplers/normal_md_sampling.py
