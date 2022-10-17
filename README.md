@@ -34,9 +34,7 @@ New data is stored in (data_path/h5store).
 The cycle repeats untill time limit reached or manually stopped.
 
 
-#############################
-##### 	Sctructure	#####
-#############################
+## Repository sctructure	
 
 exports contains 4 folders
 	activepotential - general AL framework
