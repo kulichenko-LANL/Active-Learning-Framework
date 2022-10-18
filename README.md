@@ -23,7 +23,7 @@ OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
 WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
 OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
+  
 
 ## Workflow in brief
 - The code trains an ensemble of NN interatomic potentials *data_path/models/* using initial training set *data_path/h5store/initial_training_set_125.h5*.  
